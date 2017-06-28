@@ -102,6 +102,8 @@ spring-jdbc版本：
 [springcloud-jdbc-demo1](https://github.com/1991wangliang/springcloud-jdbc-demo1) [springcloud-jdbc-demo2](https://github.com/1991wangliang/springcloud-jdbc-demo2)   
 springcloud-jdbc-demo1是发起方，springcloud-jdbc-demo2是被调用方。
 
-
+spring-jpa版本：
+[springcloud-jpa-demo1](https://github.com/1991wangliang/springcloud-jpa-demo1) [springcloud-jpa-demo2](https://github.com/1991wangliang/springcloud-jpa-demo2)   
+springcloud-jpa-demo1是发起方，springcloud-jpa-demo2是被调用方。
 
 QQ交流群：554855843
