@@ -3,7 +3,7 @@
   该框架依赖Redis／SpringCloud／[TxManager](https://github.com/1991wangliang/springcloud-tx-manager)服务。依赖第三方框架[lorne_core](https://github.com/1991wangliang/lorne_core)
   
 ## 原理与功能
-  基于对spring tx PlatformTransactionManager的本地模块事务控制从而达到全局控制事务的目的。该框架兼容任何依赖PlatformTransactionManager的DB框架。利用三阶段提交的方式来确保事务的一致性，支持本地事务和分布式事务框架共存，当方法进入的是本地事务方法，框架将不做任何分布式事务处理。当需要用到分布式事务的时候只需要在方法上添加分布式事务的注解即可。框架由于基于Spring本地事务做的封装，基本支持依赖spring的所有db框架。
+  基于对spring tx PlatformTransactionManager的本地模块事务控制从而达到全局控制事务的目的。该框架兼容任何依赖PlatformTransactionManager的DB框架。利用三阶段提交的方式来确保事务的一致性，支持本地事务和分布式事务框架共存，当方法进入的是本地事务方法，框架将不做任何分布式事务处理。当需要用到分布式事务的时候只需要在方法上添加分布式事务的注解即可。框架由于基于Spring本地事务做的封装，基本支持依赖spring的所有db框架。并在帖子底部提供了对spring-jdbc／spring-jpa／mybatis的演示demo。
   
 ##### 该框架属于强事务一致性框架。
   
@@ -105,5 +105,9 @@ springcloud-jdbc-demo1是发起方，springcloud-jdbc-demo2是被调用方。
 spring-jpa版本：
 [springcloud-jpa-demo1](https://github.com/1991wangliang/springcloud-jpa-demo1) [springcloud-jpa-demo2](https://github.com/1991wangliang/springcloud-jpa-demo2)   
 springcloud-jpa-demo1是发起方，springcloud-jpa-demo2是被调用方。
+
+spring-mybatis版本：
+[springcloud-mybatis-demo1](https://github.com/1991wangliang/springcloud-mybatis-demo1) [springcloud-mybatis-demo2](https://github.com/1991wangliang/springcloud-mybatis-demo2)   
+springcloud-mybatis-demo1是发起方，springcloud-mybatis-demo2是被调用方。
 
 QQ交流群：554855843
