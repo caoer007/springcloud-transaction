@@ -67,7 +67,7 @@ public class TransactionRunningServiceImpl implements TransactionRunningService 
             task.setBack(new IBack() {
                 @Override
                 public Object doing(Object... objects) throws Throwable{
-                    throw new Throwable(throwable);
+                    throw throwable;
                 }
             });
             //通知TxManager调用失败
